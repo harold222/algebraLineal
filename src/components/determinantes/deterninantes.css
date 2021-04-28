@@ -1,0 +1,13 @@
+.a{
+    display: flex;
+}
+
+.cell{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-value{
+    width: 100px;
+    margin: auto;
+}
