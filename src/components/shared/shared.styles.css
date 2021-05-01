@@ -1,0 +1,29 @@
+.cell{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    width: fit-content;
+    height: fit-content;
+    align-items: flex-end;
+    padding: 5px;
+    background-color: #242323;
+}
+cell-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.input-value{
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+.input-value-error{
+    background-color: #f8d7da;
+    padding: 3px 5px;
+    border: 1px solid #f5757f;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
