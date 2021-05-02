@@ -15,14 +15,14 @@ export const Determinante = () => {
     console.log(data);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }
   
   return (
     <div className="container mt-5">
       <div className="row">
-        <div className="col-5">
-          <h1>¡Hallar derminante!</h1>
+        <div className="col-12 col-md-5">
+          <h1>¡Derminante!</h1>
           <hr/>
           <select {...register('rowsAndColumns')} className="form-select">
             {[2,3,4,5,6].map(i => 
@@ -33,12 +33,11 @@ export const Determinante = () => {
           </select>
         </div>
 
-        <div className="col-7">
+        <div className="col-12  col-md-7">
           <Matriz rowsAndColumns={(watchRows) ? watchRows : 4} result={calculateResult} />
         </div>
 
         {loading && <Loading/>}
-
       </div>
     </div>
   )

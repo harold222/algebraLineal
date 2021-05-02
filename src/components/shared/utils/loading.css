@@ -1,5 +1,10 @@
 .cssload-container{
-	position:relative;
+	position:absolute;
+	background-color: rgba(0, 0, 0, 0.425);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
 }
 	
 .cssload-whirlpool,

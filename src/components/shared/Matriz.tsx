@@ -45,10 +45,6 @@ export const Matriz: React.FC<props> = (props) => {
                                 }
                             />
 
-                            <pre>
-{errors[`input_${i}`] && errors[`input_${i}`]}
-                            </pre>
-
                             <input type="number"
                                 placeholder="0"
                                 className="form-control input-value"
