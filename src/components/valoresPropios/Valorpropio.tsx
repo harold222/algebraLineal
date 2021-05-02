@@ -11,17 +11,19 @@ export const ValorPropio = () => {
 
     const calculateResult = (data: any) => {
         setLoading(true);
-        console.log(data);
+
+        
+
         setTimeout(() => {
         setLoading(false);
         }, 2000);
     }
-    
+
     return (
         <div className="container mt-5">
         <div className="row">
             <div className="col-12 col-md-5">
-            <h1>Valor Propio!</h1>
+            <h1>¡Valor Propio!</h1>
             <hr/>
             <select {...register('rowsAndColumns')} className="form-select">
                 {[2,3,4,5,6].map(i => 

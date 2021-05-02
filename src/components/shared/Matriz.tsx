@@ -25,7 +25,24 @@ export const Matriz: React.FC<props> = (props) => {
     };
 
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const result = (data: any) => props.result(data);
+    const result = (data: any) => {
+        const rows = Math.sqrt(props.rowsAndColumns ? props.rowsAndColumns : 4);
+        data = listToMatrix(Object.values(data), rows);
+        props.result(data);
+    };
+
+    const listToMatrix = (list: number[], row: number) => {
+        let matrix: any = [], i, k;
+    
+        for (i = 0, k = -1; i < list.length; i++) {
+            if (i % row === 0) {
+                k++;
+                matrix[k] = [];
+            }
+            matrix[k].push(list[i]);
+        }
+        return matrix;
+    }
   
     return (
        <>
